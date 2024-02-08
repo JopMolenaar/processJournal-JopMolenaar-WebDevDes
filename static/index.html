@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <script>
+            // Function to load Markdown file
+            function loadMarkdownFile(filePath) {
+                // Create a new XMLHttpRequest object
+                var xhr = new XMLHttpRequest();
+
+                // Define the onload function
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        // Parse Markdown to HTML
+                        var markdownContent = xhr.responseText;
+                        document.getElementById("content").innerHTML =
+                            marked(markdownContent);
+                    } else {
+                        console.error(
+                            "Failed to load Markdown file:",
+                            xhr.statusText
+                        );
+                    }
+                };
+
+                // Define the onerror function
+                xhr.onerror = function () {
+                    console.error("Failed to load Markdown file.");
+                };
+
+                // Open and send the request
+                xhr.open("GET", filePath, true);
+                xhr.send();
+            }
+
+            // Call the function with the path to your Markdown file
+            loadMarkdownFile("process.md");
+        </script>
+    </head>
+    <body>
+        <div id="content"></div>
+
+        <!-- <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            document.getElementById("content").innerHTML = marked.parse(
+                "# Marked in the browser\n\nRendered by **marked**."
+            );
+        </script> -->
+        <!-- <object data="process.html" type="text/html"></object> -->
+        <!-- <script src="js/script.js"></script> -->
+    </body>
+</html>
