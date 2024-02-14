@@ -9,7 +9,7 @@ app.use(express.static("static"));
 
 app.get("/home", function (req, res) {
     // Read the Markdown file
-    fs.readFile("static/process.md", "utf8", (err, data) => {
+    fs.readFile("static/notesKilian.md", "utf8", (err, data) => {
         if (err) {
             console.error("Error reading file:", err);
             return res.status(500).send("Error reading file");
