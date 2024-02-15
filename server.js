@@ -24,6 +24,10 @@ const allLinks = [
     }
 ]
 
+app.get("/home", function (req, res) {
+    res.render("home");
+})
+
 // Define a route with a dynamic :id parameter
 app.get("/:id", async function (req, res) {
     try {
