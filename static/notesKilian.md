@@ -96,71 +96,69 @@ Ook gaf hij als tip dat je de details en summary niet moet dichtmaken als je op 
 
 ### Dialog
 
-blokeert js niet, alert wel
+In plaats van zelf een goeie popup te bouwen met Javascript kan je ook het html element `<dialog><dialog/>` gebruiken. Een dialog blokeert de javascript daar achter niet maar een `<alert></alert>` wel. 
 
-met een form method "dialog" en een knop met submit om de dialog te closen
+In de dialog kan je een button zetten met `type="submit"` om de dialog te sluiten. En als je data terug wilt sturen zet je de submit button in een form in de dialog.
+Je kan de value in Javascript dan ophalen met `dialog.returnValue`.
+Om de dialog aan te roepen moet je wel Javascript schrijven, maar dat kan je doen met `jeDialogElement.showModal()`. 
 
-op die diaog kan je showModal() aanroepen
-dialog komt boven alles, komt in de top layer
+De dialog komt boven alles want het komt in de top layer. En je kan ook dialogs in/over dialogs plaatsen.
 
-access de value van de submit button met dialog.returnValue
-
-::backdrop kan je stylen (achter de modal)
+Om alles rondom de dialog (achter de modal) te kunnen stylen kan je met `::backdrop` dat aanroepen en stylen. 
 
 ### Container queries
 
-werken een soort als media q, ipv hoe breed is mijn vp, hoe breed is mijn component
-aan de hand van de container size kan je vertellen hoe de childs zich gedragen
+Container queries werken als een soort media queries, maar dan in plaats van hoe breed mijn vp is, is het: hoe breed is mijn container? Dus dan kan je hoe de childs in die container zich moeten gedragen. Hierdoor hoef je dus niet extra media queries toe te voegen. 
 
-container-type:
-
-50cqw container units
+Je kan dit doen met `container-type:` en `@container (min-width: ...em)`
+En 50cqw container units is dus 50% van de container breedte. 
 
 ### :has()
 
-parent selector
+:has() is een parent selector, dit kan je bijvoorbeeld zo gebruiken:
+```css
+h1:has(+ p) {
+  margin-bottom: 0;
+}
+```
+Hier zeg je: als een h1 meteen een p eronder heeft, geef het dan een `margin-bottom: 0;`.
+Voor meer info: [polypane.app/blog/where-is-has/](https://polypane.app/blog/where-is-has-new-css-selectors-that-make-your-life-easier/)
 
-form has input that is checked, doe dan iets
-soort if else
 
-polypane.app/where-is-has/
+### Features van browsers en css waar nog aan wordt gewerkt
 
-### Stop using js in the future !!!!!! (features van browsers en css waar nog aan wordt gewerkt)
+Hier noemde hij een lijstje van browser functionaliteiten die in weinig browsers al zitten, maar dit aankomende tijd wel wordt toegevoegd aan veel browsers. 
 
-Hier noemde hij een lijstje van browser functionaliteiten die in weinig browsers al zitten maar wel dit of volgend jaar worden toegevoegd aan veel browsers. 
+- `field-sizing: content;`:  styling op een input element die dan mee schaalt met de content.
+- masonry grid: een gird dat zichzelf opvult
+- selectlist (html element): selectlist heeft alle semantics en interactie van een gewone select, maar die kan je stijlen.
+> div met slot="listbox"
+> :parts
+> [popover]
+- scroll driven animations: animatie koppelen aan een scroll ergens op de pagina
 
-#### field sizing
+Voor meer info over scroll driven animations: [bram.us/scroll-driven-animations-cover-flow](https://www.bram.us/2023/02/12/scroll-driven-animations-cover-flow-2022-10-06-full-stack-europe/)
 
-input element die mee schaalt met de content
-
-#### mansonry layout
-
-gird maken, vul het maar op
-
-#### selectlist
-
-heeft alle semantics en interactie van een select
-maar is gewoon stijlbare html
-
-goede functionaliteit en mooie eigen styling
-
-div met slot="listbox"
-
-:parts, [popover]
-
-#### scroll driven animations
-
-animatie koppelen met een scroll ergens op de pagina
-
-bram.us scroll-driven-animations-cover-flow
 
 ### Conclusie
 
-thema, probeer geen js te gebruiken
-ipv van js, laat de browser t doen
-sneller etc
+De conclusie uit Kilians lezing was dat je moet proberen om zo min mogelijk Javascript te gebruiken en vooral te kijken naar wat er al mogelijk is in de browser met html en css. 
+Als je zo min mogelijk javascript gebruikt en het meeste kan behalen met html en css wordt je website sneller en gaat minder snel kapot.
 
-goeie tip: probeer zelf code te schrijven ipv de hele tijd ai, voor je baan later
+## Reflectie
 
+Ik vond de persentatie van Kilian heel interessant, confronterend en hij heeft zeker indruk op mij gemaakt. Ik ben het helemaal met hem eens dat je niet Javascript moet gebruiken als je met html en css het zelfde doel kan behalen. Een aantal css selectoren die hij besprak kende ik al wel maar veel ook niet. Dit waren namelijk:
+- `::focus-visible`
+- `input::thumb`
+- `input::track`
+- `appearance: none;`
+- `:target`
+- `scroll-margin`
+- :has()
 
-## Mijn opinie
+Ook wist ik niet dat er een `<dialog><dialog/>` element was terwijl ik zelf al we eerder had gewerkt met modals. Dus die ga ik zeker later gebruiken. Container queries kende ik ook niet. 
+
+En laatst bij mijn vorige project had ik met Javascript een automatic complete field gemaakt. Dit koste mij een uurtje om te maken en had 120 regels Javascript. Ik fetchte alle data, plaatste die in een ul onder de input balk met en een display none. Als je iets typte in de input balk dan zocht hij in de list op wat je had getypt. En zo werd de input een soort searchbar. En wanneer je op de li klikte werd dat de value van de input. 
+Ik was hier aardig trots op maar Kilian noemde tijdens zijn presentatie het html element `<datalist></datalist>` met options erin. Als ik dat had geweten had ik de vorige keer alleen de data moeten fetchen en die in de datalist moeten stoppen. De volgende keer doe ik dat.
+
+Op het laatst was er nog een vraag over AI in het werkveld. Hij gaf toen een goeie tip: probeer zelf code te schrijven ipv de hele tijd ai, voor je baan later
