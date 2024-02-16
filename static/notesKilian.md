@@ -132,9 +132,9 @@ Hier noemde hij een lijstje van browser functionaliteiten die in weinig browsers
 - `field-sizing: content;`:  styling op een input element die dan mee schaalt met de content.
 - masonry grid: een gird dat zichzelf opvult
 - selectlist (html element): selectlist heeft alle semantics en interactie van een gewone select, maar die kan je stijlen.
-> div met slot="listbox"
-> :parts
-> [popover]
+    - div met slot="listbox"
+    -  :parts
+    - [popover]
 - scroll driven animations: animatie koppelen aan een scroll ergens op de pagina
 
 Voor meer info over scroll driven animations: [bram.us/scroll-driven-animations-cover-flow](https://www.bram.us/2023/02/12/scroll-driven-animations-cover-flow-2022-10-06-full-stack-europe/)
@@ -148,17 +148,21 @@ Als je zo min mogelijk javascript gebruikt en het meeste kan behalen met html en
 ## Reflectie
 
 Ik vond de persentatie van Kilian heel interessant, confronterend en hij heeft zeker indruk op mij gemaakt. Ik ben het helemaal met hem eens dat je niet Javascript moet gebruiken als je met html en css het zelfde doel kan behalen. Een aantal css selectoren die hij besprak kende ik al wel maar veel ook niet. Dit waren namelijk:
+
 - `::focus-visible`
 - `input::thumb`
 - `input::track`
 - `appearance: none;`
 - `:target`
 - `scroll-margin`
-- :has()
+- `:has()`
 
 Ook wist ik niet dat er een `<dialog><dialog/>` element was terwijl ik zelf al we eerder had gewerkt met modals. Dus die ga ik zeker later gebruiken. Container queries kende ik ook niet. 
 
 En laatst bij mijn vorige project had ik met Javascript een automatic complete field gemaakt. Dit koste mij een uurtje om te maken en had 120 regels Javascript. Ik fetchte alle data, plaatste die in een ul onder de input balk met en een display none. Als je iets typte in de input balk dan zocht hij in de list op wat je had getypt. En zo werd de input een soort searchbar. En wanneer je op de li klikte werd dat de value van de input. 
 Ik was hier aardig trots op maar Kilian noemde tijdens zijn presentatie het html element `<datalist></datalist>` met options erin. Als ik dat had geweten had ik de vorige keer alleen de data moeten fetchen en die in de datalist moeten stoppen. De volgende keer doe ik dat.
 
-Op het laatst was er nog een vraag over AI in het werkveld. Hij gaf toen een goeie tip: probeer zelf code te schrijven ipv de hele tijd ai, voor je baan later
+Al deze nieuwe informatie is wel wat veel dus ik ga af dit terug lezen om te kijken of ik zo mijn code en projecten kan verbeteren.
+
+Op het laatst was er nog een vraag over AI in het werkveld en daarbij gaf hij een goeie tip want hij zei: juniors worden waarschijnlijk bij bepaalde bedrijven verboden om AI te gebruiken, dit komt doordat als je AI steeds je code laat schrijven, je minder goed snapt wat de code doet. En hoe je dus fouten van de AI kan corrigeren. 
+Ik gebruik veel chatGPT om mijn code sneller te schrijven, maar dit kijk ik altijd na, documenteer het, en als het niet werkt los ik het zelf op. Maar aangezien er een kans is dat ik geen AI mag gebruiken in het begin van mijn carrière, zal ik er op letten dat ik het meeste zelf schrijf. 
