@@ -68,3 +68,6 @@ Autoplay moeten gepauzeerd kunnen worden
 Zelf een screen reader gebruiken
 
 ## Reflectie
+
+Deze lezing vond ik ook interessant en belangrijk om ook deze kennis te gebruikein in mijn projecten. 
+Heel veel aria attributen waren nieuw voor mij.
