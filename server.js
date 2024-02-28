@@ -12,17 +12,21 @@ const notFoundPage = path.join(__dirname, "views", "notFound.ejs");
 const allLinks = [
     {
         paramId: "notesKilian",
-        link: "static/notesKilian.md"
-    }, 
+        link: "static/notesKilian.md",
+    },
     {
         paramId: "notesFenna",
-        link: "static/notesFenna.md"
-    }, 
+        link: "static/notesFenna.md",
+    },
     {
         paramId: "processWAFS",
-        link: "https://jopmolenaar.github.io/web-app-from-scratch-2324/process.md"
-    }
-]
+        link: "https://jopmolenaar.github.io/web-app-from-scratch-2324/process.md",
+    },
+    {
+        paramId: "notesJeffry",
+        link: "static/notesJeffry.md",
+    },
+];
 
 app.get("/home", function (req, res) {
     res.render("home");

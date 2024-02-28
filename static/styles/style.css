@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Rajdhani", sans-serif;
+}
+
+p,
+a,
+li,
+button,
+summary,
+label {
+    font-family: "Montserrat", sans-serif;
+}
+
+button,
+summary {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* The hide class */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+:root {
+    --color-header-nav: rgb(100, 102, 172);
+    --color-link-bg: rgb(160, 162, 211);
+    --color-link-hover: rgb(166, 167, 200);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* --color-header-nav: rgb(68, 27, 0); */
+    }
+}
+body {
+    display: flex;
+}
+
+header {
+    background-color: var(--color-header-nav);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+header div {
+    position: absolute;
+    width: 100vw;
+    height: 2em;
+    background-color: var(--color-header-nav);
+}
+header div h1 {
+    font-size: 1em;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    /* text-align: center;
+    align-content: center; */
+}
+header nav {
+    margin-top: 3em;
+    /* position: fixed; */
+    width: 10em;
+}
+header nav ul {
+    margin: 0;
+    padding: 0.1rem;
+    width: 100%;
+}
+header nav ul li {
+    list-style: none;
+    width: 100%;
+    margin-top: 0.8rem;
+    width: 100%;
+}
+header nav ul li a {
+    text-decoration: none;
+    background-color: var(--color-link-bg);
+    padding: 0.3rem;
+    flex-wrap: nowrap;
+    display: block;
+}
+header nav ul li a:hover {
+    background-color: var(--color-link-hover);
+}
+
+main {
+}
+
+main section {
+    padding: 1em;
+    display: flex;
+    position: relative;
+}
+main section div p {
+    max-width: 40em;
+    min-width: 20em;
+}
+
+main section nav {
+    border: solid rgb(129, 129, 129) 1px;
+    border-radius: 10px;
+    background-color: white;
+    height: fit-content;
+    width: 20em;
+    position: sticky;
+    top: 3em;
+    right: 1em;
+}
+
+pre {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 20px;
+}

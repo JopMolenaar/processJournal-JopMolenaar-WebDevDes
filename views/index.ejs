@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Jop Molenaar - Web design & dev Minor</title>
-</head>
-<body>
-    <header>
-        <h1>Blog Jop Molenaar</h1>
-        <a href="/home">Go to the homepage</a>
-    </header>
-    <main>
-        <nav class="pagesNav">
-            <ul>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
-        <section>
-            <%- html %>
-            <nav class="Nav">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Blog Jop Molenaar - Web design & dev Minor</title>
+    </head>
+    <body>
+        <header>
+            <div><a href="/home"><h1>Blog Jop Molenaar</h1></a></div>
+            
+            <nav class="pagesNav">
                 <ul>
-                    <li><a href=""></a></li>
+                    <li><a href="/notesFenna">notes Fenna</a></li>
+                    <li><a href="/notesKilian">notes Kilian</a></li>
+                    <li><a href="/processWAFS">process WAFS</a></li>
                 </ul>
             </nav>
-        </section>
-
-    </main>
-</body>
+        </header>
+        <main>
+            <section>
+                <div><%- html %></div>
+                <nav class="Nav">
+                    <ul>
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+            </section>
+        </main>
+    </body>
 </html>
