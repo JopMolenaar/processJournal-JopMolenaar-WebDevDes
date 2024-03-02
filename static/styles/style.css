@@ -29,6 +29,10 @@ summary {
     display: none;
 }
 
+p, li {
+    max-width: 40em;
+}
+
 /* The hide class */
 .visually-hidden {
     clip: rect(0 0 0 0);
@@ -44,19 +48,32 @@ summary {
     --color-header-nav: rgb(100, 102, 172);
     --color-link-bg: rgb(160, 162, 211);
     --color-link-hover: rgb(166, 167, 200);
+    --color-body: rgb(62, 155, 62);
+    --color-text-nav: black;
+    --color-main: rgb(248, 248, 248);
+    --color-mix: rgb(0, 0, 0);
+    --color-code-bg: #dadada;
+    --color-code: rgb(22, 22, 22);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* --color-header-nav: rgb(68, 27, 0); */
+        --color-body: rgb(0, 81, 0);
+        --color-text-nav: white;
+        --color-main: #1b1b1b;
+        --color-text-main: white;
+        --color-mix: rgb(255, 255, 255);
+        --color-code-bg: #343434;
+        --color-code: white;
     }
 }
 body {
     display: flex;
+    background-color: var(--color-body);
 }
 
 header {
-    background-color: var(--color-header-nav);
+    background-color: var(--color-body);
     display: flex;
     position: relative;
     flex-direction: column;
@@ -69,82 +86,122 @@ header div {
     position: absolute;
     width: 100vw;
     height: 2em;
-    background-color: var(--color-header-nav);
+    /* background-color: var(--color-body); */
 }
-header div a {
+header a {
     text-decoration: none;
     color: black;
     display: block;
     height: 100%;
     width: fit-content;
+    color: var(--color-text-nav);
 }
-header div a h1 {
+header a h1 {
     font-size: 1em;
     margin: 0;
     height: 100%;
     display: flex;
     place-items: center;
-    margin-left: 0.5em;
-    /* text-align: center;
-    align-content: center; */
 }
 header nav {
-    margin-top: 3em;
-    /* position: fixed; */
     width: 10em;
 }
 header nav ul {
     margin: 0;
-    padding: 0.1rem;
+    padding: 0;
     width: 100%;
 }
-header nav ul li {
+header nav ul li + li {
     list-style: none;
     width: 100%;
     margin-top: 0.8rem;
 }
 header nav ul li a {
     text-decoration: none;
-    background-color: var(--color-link-bg);
     padding: 0.3rem;
     flex-wrap: nowrap;
     display: block;
 }
+/* header nav ul li:not(:first-child) a {
+    background-color: color-mix(in srgb, var(--color-body) 85%, var(--color-mix));
+    transition: 200ms;
+} */
 header nav ul li a:hover {
-    background-color: var(--color-link-hover);
+    background-color: color-mix(in srgb, var(--color-body) 93%, var(--color-mix));
 }
 
 main {
-    width: 100%;
-    margin-top: 2em;
+    /* width: 100%; */
+    margin-top: 1.5em;
+    background-color: var(--color-main);
+    border-radius: 20px 0 0 0;
+    position: relative;
+    padding: 1em;
+    display: flex;
+    position: relative;
+    justify-content: end;
+    color: var(--color-text-main);
+    width: 100vw;
 }
-
-main section {
+main div > * {
+    width: fit-content;
+}
+/* main section {
     padding: 1em;
     display: flex;
     position: relative;
     justify-content: space-evenly;
+    color: var(--color-text-main);
+} */
+main div {
+    width: auto;
 }
-main section div p {
-    max-width: 40em;
+main div p {
     min-width: 20em;
 }
+main div p a {
+    color: color-mix(in srgb, currentColor 60%, var(--color-body));
+}
 
-main section nav {
+main nav {
     border: solid rgb(129, 129, 129) 1px;
     border-radius: 10px;
     background-color: white;
+    background-color: color-mix(in srgb, var(--color-main) 80%, var(--color-mix));
     height: fit-content;
     width: 20em;
     position: sticky;
     top: 3em;
-    right: 1em;
 }
 
 pre {
-    background-color: rgb(45, 45, 45);
-    color: white;
-    padding: 1em;
+    background-color: var(--color-code-bg);
+    color: var(--color-code);
     width: fit-content;
-    border-radius: 20px;
+    max-width: 50em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    margin: 1rem 0 2rem;
+    padding: 1rem 2.5rem 1rem 1rem;
+    white-space:  break-spaces;
+    word-break: break-word;
+}
+
+p > code {
+    background-color: color-mix(in srgb, var(--color-code-bg)90%, white);
+    color: var(--color-code);
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+
+
+@media (min-width: 96.7em){
+    main {
+        justify-content: center;
+    }
+    main nav {
+        position: fixed;
+        top: 3em;
+        right: 1em;
+    }
 }

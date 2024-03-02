@@ -13,7 +13,7 @@ deployment => bash, npm, git, chatgpt, dotenv
 
 localhost, server
 2 manieren om be en fe naar de server te sturen.
-hij heeft een eigen script gebouwd om websites online te zxetten in 2min
+hij heeft een eigen script gebouwd om websites online te zetten in 2min
 
 toolbox heeft hij ontwikkeld om dingen te maken en manipuleren
 waar die elementen kan hergebruiken op andere sites
