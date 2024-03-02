@@ -164,14 +164,37 @@ main div p a {
 }
 
 main nav {
-    border: solid rgb(129, 129, 129) 1px;
-    border-radius: 10px;
-    background-color: white;
-    background-color: color-mix(in srgb, var(--color-main) 80%, var(--color-mix));
+    /* border: solid rgb(129, 129, 129) 1px; */
+    /* border-radius: 10px; */
+    /* background-color: white;
+    background-color: color-mix(in srgb, var(--color-main) 80%, var(--color-mix)); */
     height: fit-content;
     width: 20em;
     position: sticky;
     top: 3em;
+    padding: 0.5rem;
+}
+main nav ul {
+    margin: 0;
+    padding: 0;
+    gap: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+main nav li {
+    list-style: none;
+}
+main nav li[data-heading="h3"]{
+    padding-left: 1em;
+}
+main nav li a {
+    text-decoration: none;
+    color: color-mix(in srgb, var(--color-main) 30%, var(--color-mix));
+    transition: 200ms;
+}
+main nav li a:hover{
+    text-decoration: underline;
+    color: color-mix(in srgb, var(--color-main) 0%, var(--color-mix));
 }
 
 pre {
