@@ -26,6 +26,18 @@ const allLinks = [
         paramId: "notesJeffry",
         link: "static/notesJeffry.md",
     },
+    {
+        paramId: "notesNils",
+        link: "static/notesNils.md",
+    },
+    {
+        paramId: "processCSS",
+        link: "https://jopmolenaar.github.io/CSS-cockpit-control/process.md",
+    },
+    {
+        paramId: "processBT",
+        link: "https://jopmolenaar.github.io/BT-form-validatie/process.md",
+    },
 ];
 
 app.get("/home", function (req, res) {
