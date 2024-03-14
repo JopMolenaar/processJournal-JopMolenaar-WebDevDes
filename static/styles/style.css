@@ -173,6 +173,9 @@ main nav {
     position: sticky;
     top: 3em;
     padding: 0.5rem;
+    border-inline-start: var(--color-body) solid 2px;
+    margin-inline-start: 0.5rem;
+
 }
 main nav ul {
     margin: 0;
@@ -213,7 +216,7 @@ pre {
 p > code {
     background-color: color-mix(in srgb, var(--color-code-bg)90%, white);
     color: var(--color-code);
-    padding: 0.3rem;
+    padding: 0.15rem;
     border-radius: 4px;
 }
 

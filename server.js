@@ -31,6 +31,10 @@ const allLinks = [
         link: "static/notesNils.md",
     },
     {
+        paramId: "notesJeremy",
+        link: "static/notesJeremy.md",
+    },
+    {
         paramId: "processCSS",
         link: "https://jopmolenaar.github.io/CSS-cockpit-control/process.md",
     },
