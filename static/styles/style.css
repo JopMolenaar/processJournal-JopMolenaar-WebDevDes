@@ -28,6 +28,9 @@ summary {
 ::-webkit-scrollbar {
     display: none;
 }
+:target {
+    scroll-margin-top: 2em;
+}
 
 p, li {
     max-width: 40em;
@@ -67,6 +70,7 @@ p, li {
         --color-code: white;
     }
 }
+
 body {
     display: flex;
     background-color: var(--color-body);
@@ -229,5 +233,11 @@ p > code {
         position: fixed;
         top: 3em;
         right: 1em;
+    }
+}
+
+@media (prefers-reduced-motion:no-preference){
+    html {
+        scroll-behavior: smooth;
     }
 }

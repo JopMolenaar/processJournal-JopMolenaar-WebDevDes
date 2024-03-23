@@ -63,7 +63,7 @@ Maar bij scrollen op de pagina kan t ook met 2 regels js.
 Accessibility is heel belangrijk en je zou animaties moeten kunnen uitzetten voor mensen die dat willen. Dit kan met `@media {prefers-reduced-motion:no-preference}`.
 
 Als je links hebt die verwijzen naar een kopje op de zelfde pagina dan springt dat daar zo naar toe. De gebruiker weet dan niet waar ze zijn en hoeveel content ze hebben gemist. 
-Met `scroll-behaviour: smooth;` ga je dat tegen en ziet de gebruiker een mooie scroll animatie. Deze moet je dus wel in de `@media {prefers-reduced-motion:no-preference}` zetten. 
+Met `scroll-behavior: smooth;` ga je dat tegen en ziet de gebruiker een mooie scroll animatie. Deze moet je dus wel in de `@media (prefers-reduced-motion:no-preference)` zetten. 
 
 Ook heb je `scroll-margin`, dit is een margin tot waar die naar boven scrolled, zo kan je bepalen waar dat gelinkte kopje op je scherm komt als je op die link klikt. 
 
