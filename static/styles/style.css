@@ -1,57 +1,59 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-    font-family: "Rajdhani", sans-serif;
-}
-
-p,
-a,
-li,
-button,
-summary,
-label {
-    font-family: "Montserrat", sans-serif;
-}
-
-button,
-summary {
-    cursor: pointer;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-:target {
-    scroll-margin-top: 2em;
-}
-
-p, li {
-    max-width: 40em;
-}
-
-/* The hide class */
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+@layer base{
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Rajdhani", sans-serif;
+    }
+    
+    p,
+    a,
+    li,
+    button,
+    summary,
+    label {
+        font-family: "Montserrat", sans-serif;
+    }
+    
+    button,
+    summary {
+        cursor: pointer;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    :target {
+        scroll-margin-top: 2em;
+    }
+    
+    p, li {
+        max-width: 40em;
+    }
+    
+    /* The hide class */
+    .visually-hidden {
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
 }
 
 :root {
     --color-header-nav: rgb(100, 102, 172);
     --color-link-bg: rgb(160, 162, 211);
     --color-link-hover: rgb(166, 167, 200);
-    --color-body: rgb(62, 155, 62);
+    --color-body: rgb(165, 197, 160);
     --color-text-nav: black;
     --color-main: rgb(248, 248, 248);
     --color-mix: rgb(0, 0, 0);
@@ -59,7 +61,7 @@ p, li {
     --color-code: rgb(22, 22, 22);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --color-body: rgb(0, 81, 0);
         --color-text-nav: white;
@@ -69,84 +71,12 @@ p, li {
         --color-code-bg: #343434;
         --color-code: white;
     }
-}
+} */
 
 body {
-    display: flex;
     background-color: var(--color-body);
 }
 
-header {
-    background-color: var(--color-body);
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}
-header div {
-    position: absolute;
-    width: 100vw;
-    height: 2em;
-    /* background-color: var(--color-body); */
-}
-header a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    height: 100%;
-    width: fit-content;
-    color: var(--color-text-nav);
-}
-header a h1 {
-    font-size: 1em;
-    margin: 0;
-    height: 100%;
-    display: flex;
-    place-items: center;
-}
-header nav {
-    width: 10em;
-}
-header nav ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-header nav ul li + li {
-    list-style: none;
-    width: 100%;
-    margin-top: 0.8rem;
-}
-header nav ul li a {
-    text-decoration: none;
-    padding: 0.3rem;
-    flex-wrap: nowrap;
-    display: block;
-}
-/* header nav ul li:not(:first-child) a {
-    background-color: color-mix(in srgb, var(--color-body) 85%, var(--color-mix));
-    transition: 200ms;
-} */
-header nav ul li a:hover {
-    background-color: color-mix(in srgb, var(--color-body) 93%, var(--color-mix));
-}
-
-main {
-    /* width: 100%; */
-    margin-top: 1.5em;
-    background-color: var(--color-main);
-    border-radius: 20px 0 0 0;
-    position: relative;
-    padding: 1em;
-    display: flex;
-    position: relative;
-    justify-content: end;
-    color: var(--color-text-main);
-    width: 100vw;
-}
 main div > * {
     width: fit-content;
 }

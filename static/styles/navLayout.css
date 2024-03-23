@@ -1,0 +1,144 @@
+@layer base, header;
+
+@layer header {
+    header {
+        background-color: var(--color-body);
+        display: flex;
+        flex-direction: row;
+    }
+    header a {
+        text-decoration: none;
+        color: black;
+        color: var(--color-text-nav);
+    }
+    header a h1 {
+        font-size: 1em;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        place-items: center;
+    }
+    header nav {
+        width: 100%;
+    }
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* gap: 1.5rem; */
+        column-gap: auto;
+    }
+    nav ul li {
+        list-style: none;
+        padding: 0.1rem 0.5rem ;
+    }
+    nav ul li:not(li+li) {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        max-width: none;
+    }
+    /* header nav ul li:not(:first-child) a {
+        background-color: color-mix(in srgb, var(--color-body) 85%, var(--color-mix));
+        transition: 200ms;
+    } */
+    header nav ul li a:hover {
+        background-color: color-mix(in srgb, var(--color-body) 93%, var(--color-mix));
+    }
+    main {
+        background-color: var(--color-main);
+        padding: 1em;
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+@media (min-width: 60em){
+    body {
+        display: flex;
+    }
+    header {
+        background-color: var(--color-body);
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    header div {
+        position: absolute;
+        width: 100vw;
+        height: 2em;
+        /* background-color: var(--color-body); */
+    }
+    header a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        height: 100%;
+        width: fit-content;
+        color: var(--color-text-nav);
+    }
+    header a h1 {
+        font-size: 1em;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        place-items: center;
+    }
+    header nav {
+        width: 10em;
+    }
+    header nav ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+    }
+    header nav ul li + li {
+        list-style: none;
+        width: 100%;
+        margin-top: 0.8rem;
+    }
+    nav ul li:not(li+li) {
+        text-align: start;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        padding: 0.3rem;
+        padding-left: 1.3rem;
+        flex-wrap: nowrap;
+        display: block;
+    }
+    /* header nav ul li:not(:first-child) a {
+        background-color: color-mix(in srgb, var(--color-body) 85%, var(--color-mix));
+        transition: 200ms;
+    } */
+    header nav ul li a:hover {
+        background-color: color-mix(in srgb, var(--color-body) 93%, var(--color-mix));
+    }
+    
+    main {
+        /* width: 100%; */
+        margin-top: 1.5em;
+        background-color: var(--color-main);
+        border-radius: 20px 0 0 0;
+        position: relative;
+        padding: 1em;
+        display: flex;
+        position: relative;
+        justify-content: end;
+        color: var(--color-text-main);
+        width: 100vw;
+    }
+}
