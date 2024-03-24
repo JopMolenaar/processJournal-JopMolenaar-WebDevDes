@@ -1,4 +1,11 @@
 {
+    "name": "blogJop",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
     "devDependencies": {
         "marked": "^2.0.0"
     },
