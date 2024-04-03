@@ -42,6 +42,18 @@ const allLinks = [
         paramId: "processBT",
         link: "https://jopmolenaar.github.io/BT-form-validatie/process.md",
     },
+    {
+        paramId: "Hackathon",
+        link: "static/hackathon.md",
+    },
+    {
+        paramId: "processAPI",
+        link: "https://raw.githubusercontent.com/JopMolenaar/API-JopMolenaar/main/processAPI.md",
+    },
+    {
+        paramId: "processHCD",
+        link: "https://raw.githubusercontent.com/JopMolenaar/HCD-videoExperienceForDeafPeople-Jop/main/processHCD.md",
+    },
 ];
 
 app.get("/home", function (req, res) {
