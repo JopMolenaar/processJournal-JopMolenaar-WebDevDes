@@ -35,6 +35,14 @@ const allLinks = [
         link: "static/notesJeremy.md",
     },
     {
+        paramId: "notesMarieke",
+        link: "static/notesMarieke.md",
+    },
+    {
+        paramId: "notesRosa",
+        link: "static/notesRosa.md",
+    },
+    {
         paramId: "processCSS",
         link: "https://jopmolenaar.github.io/CSS-cockpit-control/process.md",
     },
@@ -52,7 +60,7 @@ const allLinks = [
     },
     {
         paramId: "processHCD",
-        link: "https://raw.githubusercontent.com/JopMolenaar/HCD-videoExperienceForDeafPeople-Jop/main/processHCD.md",
+        link: "https://raw.githubusercontent.com/JopMolenaar/HCD-videoExperienceForMarie/main/README.md",
     },
 ];
 

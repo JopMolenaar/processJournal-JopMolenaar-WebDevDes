@@ -137,8 +137,24 @@
         padding: 1em;
         display: flex;
         position: relative;
-        justify-content: end;
+        justify-content: center;
         color: var(--color-text-main);
         width: 100vw;
+    }
+}
+
+@media (min-width: 70em){
+    main {
+
+        justify-content: end;
+
+    }
+}
+
+@media (min-width: 80em){
+    main {
+
+        justify-content: center;
+
     }
 }
