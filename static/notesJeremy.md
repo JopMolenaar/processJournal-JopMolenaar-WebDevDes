@@ -1,4 +1,4 @@
-## Jeremy keith
+## Jeremy Keith
 
 ### Declarative Design
 
