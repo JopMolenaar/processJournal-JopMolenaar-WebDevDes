@@ -93,3 +93,9 @@ footer p a:hover {
         grid-column: 1/3;
     }
 }
+
+@media (min-width: 96.7em) {
+    main nav {
+        position: relative;
+    }
+}
