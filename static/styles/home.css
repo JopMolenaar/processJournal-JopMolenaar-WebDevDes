@@ -97,5 +97,7 @@ footer p a:hover {
 @media (min-width: 96.7em) {
     main nav {
         position: relative;
+        top: 0em;
+        right: 0em;
     }
 }
