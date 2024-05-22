@@ -36,6 +36,16 @@ Design en eerste dingen programmeren
 
 
 
+Week 2:
+dinsdag:
 
+Meeting met Marten
 
+woensdag:
 
+Tech reveiw met Marten, vooral gehad over het concept en code. Dit was allemaal ok en ik had geen vragen. We hadden het een beetje over performance en dit ook getest. 
+
+We hadden een meeting met Yuri vandaag, en ze waren heel erg verast over wat we al hadden. 
+We hebben nog meer duidelijkheid gekregen over wat zij nou eigenlijk willen met dit prototype. Dat is namelijk om het later wel automatisch te simuleren, en dat nodes hun eigen gedrag hebben. Alleen dan met interactie. Storytelling, oftewel onboarding vond Yuri een goed idee. We hebben ook gevraagd om te mogen testen en met wie dan. Hier kwam uit dat het gewoon studenten rond onze leeftijd moeten zijn alleen niet uit onze studie. Het gaat puur om of mensen het snappen en kunnen gebruiken, niet hoe het er nog uit ziet. Dit gaan we later vragen aan design experts. Ook moeten we karaktereigenschappen toevoegen aan de nodes. Gaat Rick verder op onze code, en laat weten welke features er aan komen zodat wij hier al op kunnen voorbeireiden met UX en UI. 
+
+Donderdag
