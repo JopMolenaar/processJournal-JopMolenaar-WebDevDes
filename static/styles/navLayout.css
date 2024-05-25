@@ -41,13 +41,18 @@
         display: flex;
         max-width: none;
     }
-    /* header nav ul li:not(:first-child) a {
-        background-color: color-mix(in srgb, var(--color-body) 85%, var(--color-mix));
-        transition: 200ms;
-    } */
-    header nav ul li a:hover {
-        background-color: color-mix(in srgb, var(--color-body) 93%, var(--color-mix));
+    header nav ul li a {
+        padding: 0.3em;
     }
+    header nav ul li {
+        & a:hover {
+        background-color: color-mix(in srgb, var(--color-body) 93%, var(--color-mix));
+        } 
+        & .active-link {
+            background-color: color-mix(in srgb, var(--color-body) 93%, var(--color-mix));
+        }
+    }
+   
     main {
         background-color: var(--color-main);
         padding: 1em;
@@ -159,17 +164,21 @@
     nav ul li:not(li+li) {
         text-align: start;
     }
-    header nav ul li a {
-        text-decoration: none;
-        padding: 0.3rem;
-        padding-left: 1.3rem;
-        flex-wrap: nowrap;
-        display: block;
+    header nav ul li {
+        & a {
+            text-decoration: none;
+            padding: 0.3rem;
+            padding-left: 1.3rem;
+            flex-wrap: nowrap;
+            display: block;
+            width: 100%;
+            transition: 150ms;
+        }
+        & .active-link {
+            background-color: color-mix(in srgb, var(--color-body) 93%, var(--color-mix));
+        }
     }
-    /* header nav ul li:not(:first-child) a {
-        background-color: color-mix(in srgb, var(--color-body) 85%, var(--color-mix));
-        transition: 200ms;
-    } */
+    
     header nav ul li a:hover {
         background-color: color-mix(in srgb, var(--color-body) 93%, var(--color-mix));
     }

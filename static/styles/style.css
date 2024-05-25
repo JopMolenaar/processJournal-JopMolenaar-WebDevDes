@@ -48,6 +48,9 @@
         width: 1px;
     }
 }
+* {
+    box-sizing: border-box;
+}
 
 :root {
     --color-header-nav: rgb(100, 102, 172);

@@ -4,7 +4,6 @@ let activeIndex = -1;
 // Get all navigation links and add mouseover event listeners
 Array.from(document.querySelectorAll("main section:nth-of-type(1) nav a")).forEach((item, index) => {
     item.onmouseover = () => {
-        console.log("Index", index, "Active", activeIndex);
         const currentBackgroundPosition = window.getComputedStyle(background).getPropertyValue("background-position-y");
         const currentPositionPercentage = parseFloat(currentBackgroundPosition);
 
