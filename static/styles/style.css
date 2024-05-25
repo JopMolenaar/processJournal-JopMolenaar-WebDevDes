@@ -133,6 +133,10 @@ main nav li a:hover{
     text-decoration: underline;
     color: color-mix(in srgb, var(--color-main) 0%, var(--color-mix));
 }
+main nav li a[href="#"]:hover{
+    text-decoration: line-through;
+    color: color-mix(in srgb, var(--color-main) 60%, var(--color-mix));
+}
 
 pre {
     background-color: var(--color-code-bg);
@@ -152,6 +156,10 @@ p > code {
     color: var(--color-code);
     padding: 0.15rem;
     border-radius: 4px;
+}
+
+a[href="#"] {
+    text-decoration: line-through;
 }
 
 
