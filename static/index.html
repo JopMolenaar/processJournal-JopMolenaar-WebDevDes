@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="flipcard.css">
 </head>
 <body>
     <main>
         <h1>Blog</h1>
         <ul>
-            <li><a href="/home"><h2>Blog Jop Molenaar</h2></a></li>
+            <li class="flip-card">
+                <a class="flip-card-inner" href="/home">
+                    <div class="flip-card-front">
+                        <h2>Blog Jop Molenaar</h2>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Samenvatting en leerdoelen van de minor web</p>
+                    </div>
+                </a>
+            </li>
             <li><a href="/notesFenna">Fenna de Wilde</a></li> 
             <li><a href="/notesKilian">Kilian Valkhof</a></li>
             <li><a href="/notesNils">Nils Binder</a></li>
@@ -32,6 +42,6 @@
     <div class="blob"></div>
     <div class="blob"></div>
     <script src="cards.js"></script>
-    <script src="cursor.js"></script>
+    <!-- <script src="cursor.js"></script> -->
 </body>
 </html>

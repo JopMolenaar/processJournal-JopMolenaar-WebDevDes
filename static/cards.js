@@ -103,7 +103,7 @@ lis.forEach((li) => {
     if (positionValues.length === 1) {
         randomIndex = giveRandomNumber(0, 0);
     } else {
-        randomIndex = giveRandomNumber(0, positionValues.length);
+        randomIndex = giveRandomNumber(-1, positionValues.length);
     }
     const position = positionValues[randomIndex];
     li.style.top = position.top;
