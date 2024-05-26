@@ -2,14 +2,61 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: "Rajdhani", sans-serif;
 }
 
 body {
     height: 100vh;
+    overflow: hidden;
 }
-h1 {
+::-webkit-scrollbar {
     display: none;
 }
+h1 {
+    /* display: none; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25vw;
+    opacity: 0.3;
+    filter: blur(5px);
+}
+
+body > .blob {
+    display: none;
+    pointer-events: none;
+    position: absolute;
+    background-color: none;
+    border: solid black 1px;
+    border-radius: 50%;
+    z-index: 80;
+    width: 30px;
+    height: 30px;
+    transition: 80ms;
+}
+
+body .blob:nth-of-type(1) {
+    transition: 200ms;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+
+
+
+html:has(a:hover) {
+    & .blob:nth-of-type(2) {
+        transition: 200ms;
+        width: 40px;
+        height: 40px;
+        background-color: black;
+    }
+    & .blob:nth-of-type(1){
+        opacity: 0;
+    } 
+}
+
 
 main {
     height: 100%;
@@ -18,27 +65,37 @@ ul {
     align-self: center;
     position: relative;
     aspect-ratio: 1;
-    /* transform: translate(-17%, -42%); */
-    width: 120vw;
-    height: 120vh;
+    width: 140vw;
+    height: 140vh;
 }
 
 li {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     position: absolute;
-    /* width: 15em; */
-    /* height: 12em; */
     list-style: none;
-    height: 12em;
-    width: 10em;
-    background-color: rgb(157, 157, 213);
+    height: 28vh;
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & a {
+        width: 80%;
+        height: 100%;
+        background-color: rgb(238, 238, 238);
+        border: solid black 2px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 2.2em;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        overflow: hidden;
+    }
 }
 
-/* 51em left is de max */
-/* 65em top is de max */
-
 li:nth-of-type(1){
-    top: 10vh;
+    top: 4vh;
     left: 10vw;
 }
 li:nth-of-type(2){
@@ -46,66 +103,62 @@ li:nth-of-type(2){
     left: 35vw;
 }
 li:nth-of-type(3){
-    top: 10vh;
+    top: 6vh;
     left: 70vw;
 }
 li:nth-of-type(4){
     top: 10vh;
     left: 105vw;
 }
-
-
 li:nth-of-type(5){
     top: 37vh;
-    left: 10vw;
+    left: 5vw;
 }
 li:nth-of-type(6){
-    top: 37vh;
-    left: 35vw;
+    top: 40vh;
+    left: 36vw;
 }
 li:nth-of-type(7){
-    top: 37vh;
-    left: 70vw;
+    top: 38vh;
+    left: 89vw;
 }
 li:nth-of-type(8){
-    top: 37vh;
-    left: 105vw;
+    top: 46vh;
+    left: 115vw;
 }
-
 li:nth-of-type(9){
-    top: 65vh;
-    left: 10vw;
+    top: 78vh;
+    left: 7vw;
 }
 li:nth-of-type(10){
-    top: 65vh;
-    left: 30vw;
+    top: 72vh;
+    left: 39vw;
 }
 li:nth-of-type(11){
-    top: 65vh;
-    left: 50vw;
+    top: 45vh;
+    left: 62vw;
 }
 li:nth-of-type(12){
-    top: 65vh;
-    left: 80vw;
+    top: 76vh;
+    left: 81vw;
 }
 li:nth-of-type(13){
-    top: 65vh;
-    left: 105vw;
+    top: 78vh;
+    left: 115vw;
 }
-
 li:nth-of-type(14){
-    top: 93vh;
-    left: 10vw;
+    top: 110vh;
+    left: 4vw;
 }
 li:nth-of-type(15){
-    top: 93vh;
+    top: 104vh;
     left: 35vw;
 }
 li:nth-of-type(16){
-    top: 93vh;
+    top: 110vh;
     left: 70vw;
 }
 li:nth-of-type(17){
-    top: 93vh;
+    top: 107vh;
     left: 105vw;
 }
