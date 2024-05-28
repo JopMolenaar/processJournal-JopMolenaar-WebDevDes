@@ -7,8 +7,7 @@
 
 body {
     height: 100vh;
-    overflow: hidden;
-
+    animation: fade-in 700ms linear;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -36,8 +35,8 @@ h1::after {
     content: "";
     position: absolute;
     left: 0%;
-    top: 25%;
-    /* transform: translate(50%, 50%); */
+    /* top: 25%; */
+    transform: translate(50%, 50%);
     z-index: 2;
     width: 2em;
     aspect-ratio: 1.154700538379251 / 1;
@@ -127,7 +126,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    & a {
+    & a, button {
         width: 80%;
         height: 100%;
         background-color: rgb(238, 238, 238);
@@ -213,3 +212,53 @@ li:nth-of-type(17){
     top: 107vh;
     left: 105vw;
 }
+
+.fade-out {
+    /* animation: fade-out 700ms linear; */
+}
+.grow {
+    /* animation: grow 1500ms linear; */
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* 
+@keyframes grow {
+    0% {
+        height: 28vh;
+        width: 22vw;
+    }
+    60% {
+        width: 90vw;
+        height: 90vh;
+        top: 0em;
+        left: 0em;
+    }
+    100% {
+        width: 90vw;
+        height: 90vh;
+        top: 0em;
+        left: 0em;
+    }
+} */

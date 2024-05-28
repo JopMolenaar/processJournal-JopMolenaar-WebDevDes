@@ -86,6 +86,8 @@ window.onmousemove = (e) => {
     const panX = maxX * xDecimal * -1,
         panY = maxY * yDecimal * -1;
 
+    console.log(xDecimal, yDecimal);
+
     ul.animate(
         {
             transform: `translate(${panX}px, ${panY}px)`,
