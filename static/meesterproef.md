@@ -12,17 +12,11 @@ Product bio (process)
 
 ### 🛫 Week 1
 
-**Maandag** hadden we een kickoff van dit vak, ...
-Alles opzetten qua deliverables.
-OOP alvast een beetje uitschrijven en onderzoek naar doen.
-Designs uitzoeken
+**Maandag** hadden we een kickoff van dit vak en kregen we te horen wat voor project we hadden gekregen. Dit was Social Network Simulator geworden. Hiervoor zijn we meteen aan de slag gegaan en hebben de eerste dingen alvast kunnen doen zoals OOP alvast een beetje uitschrijven en onderzoek er naar gedaan. Ook hebben we moglijke eerste designs uitgezocht. Ik had vier leerdoelen, maar hiervan waren er 2 minder bruikbaar van geworden. Uiteindelijk heb ik mijn drie leerdoelen iets aangepast.
 
-**Dinsdag** Inlezen project, Code bekijken, Brainstormen over eerste design en features
-Object oriented programming start, leren over hoe het werkt en hoe we het gaan gebruiken
+**Dinsdag** hebben we ons verder ingelezen in het project. Ook hebben we de code die er al was kunnen inzien. We hebben kunnen brainstormen over het eerste design en de features. En hebben dieper in object oriented programming gekeken. 
 
-**Woensdag** Eeste meeting met Yuri, Tech reviews => word gewoon veel concreter, probeer zo bij de klant een recap te geven nadat ze alles hebben uitgelegd om zo de misvattingen eruit te halen. 
-Eerste design maken met behulp van de nieuwe inzichten
-Start maken met het design te programmeren en wat er al geschreven is te begrijpen en te ordenen.
+**Woensdag** begonnen we met tech reviews.Daar kregen we een tip om een korte recap bij de klant te geven van de opdracht zodat de opdrachtgever eventueel misvattingen eruit kan halen. Daarna hadden we onze eeste meeting met Yuri. Bij deze meeting hebben we de gelegenheid gekregen om vragen te kunnen stellen en dit hielp ons erg om de opdracht beter te snappen. Verder zijn we bezig geweest met ons eerste design en hebben een start gemaakt met het design te programmeren en wat er al geschreven is te begrijpen en te ordenen.
 
 **Donderdag** Wat er al geschreven is begrijpen en ordenen.
 Design en eerste dingen programmeren
@@ -46,8 +40,6 @@ nieuwe functie van Rick erin gegooid.
 We hadden een meeting met Yuri vandaag, en ze waren heel erg verast over wat we al hadden. 
 We hebben nog meer duidelijkheid gekregen over wat zij nou eigenlijk willen met dit prototype. Dat is namelijk om het later wel automatisch te simuleren, en dat nodes hun eigen gedrag hebben. Alleen dan met interactie. Storytelling, oftewel onboarding vond Yuri een goed idee. We hebben ook gevraagd om te mogen testen en met wie dan. Hier kwam uit dat het gewoon studenten rond onze leeftijd moeten zijn alleen niet uit onze studie. Het gaat puur om of mensen het snappen en kunnen gebruiken, niet hoe het er nog uit ziet. Dit gaan we later vragen aan design experts. Ook moeten we karaktereigenschappen toevoegen aan de nodes. Gaat Rick verder op onze code, en laat weten welke features er aan komen zodat wij hier al op kunnen voorbeireiden met UX en UI. 
 
-Donderdag
-
 **Donderdag** 
 
 Meeting gehad met Sanne
@@ -62,18 +54,21 @@ Hebben het werkend gekregen behalve de tools en dat de bolletjes groeien
 
 ### Week 3
 
-**Maandag** 
+**Maandag** ben ik bezig geweest met het omschrijven van de code naar object oriented, (classes and constructors). We hebben de tools werkend gekregen, de nodes groeien weer, hebben de forward buttons laten spawnen als je mensen linked en hebben wat code duplications eruit gehaald. 
 
-Bezig geweest met het omschrijven van de code naar object oriented, (classes and constructors)
-Hebben de tools werkend gekregen, bolletjes groeien weer, hebben de forward buttons laten spawnen als je mensen linked
-Code duplications eruit gehaald
+**Dinsdag** zijn we bezig geweest met de design rationale. Deze hebben we opgezet en content voor gemaakt. Ook heb ik wat comments kunnen toevoegen aan de code.  
 
-**Dinsdag** 
+**Woensdag** hadden we tech reviews, een meeting met Marten en weer een client meeting met Yuri. 
+Bij de tech reviews heb ik laten zien waar we waren en heb ik de code kunnen laten zien aan Cyd. Die zei dat het misschien nog korter kon door duplicate code eruit te halen. Ook zei ze dat de mobiel een andere overlay img moest hebben zodat het meer als een geheel eruit ziet. Verder zei ze dat het lastig zou zijn om het in en uit zoomen van de kaart te maken, maar dat we er wel mee zouden kunnen experimenteren. 
 
-Design rationale gemaakt
-Comments geschreven bij bepaalde functies.
+De meeting met Marten was kort en bondig, we lieten even zien en horen wat we Yuri zouden vragen en dit was allemaal in orde. 
 
-**Woensdag** 
+Wat we bij de client meeting wilde laten zien was wat we kwa code hebben omgeschreven naar object oriented. Verder wilde we wat vragen stellen aan Rick over de functies die hij had gegeven. Deze had ik namelijk geprobeerd te implementeren maar dat lukte niet. Dit kwam omdat ik bepaalde dingen mistte en niet helemaal goed gingen. Een aantal dingen daarvan heb ik kunnen fixen, maar soms wist ik niet helemaal wat hij er precies mee wilde doen. Uiteindelijk hebben we hier antwoord op gekregen na wat door te vragen, en snapte het. Wat we eigenlijk nog hadden moeten doen is het een beetje live coden want na het gesprek liep ik weer tegen andere dingen aan die ik nog niet had gezien. 
+
+Verder hadden we wat voorstellen gedaan aan Yuri. Deze gingen over de mobiel als main interface. Dit wilde hij niet als main interface maar eigenlijk als extra interface. Hij was verder wel heel erg enthausiast over het idee. Ook hebben we gevraagd wat hij vond over de onboarding en het exporteren en importeren van data om zo presets te maken. Hier was hij ook beide erg enthausiast over. 
+
+Ook had Yuri nog wat dingen aan te merken op de styling. De mobiel moest kleiner, de toolbar naar onderen want die staat bovenaan en daardoor lijkt hij het belangrijkst, en het plaatje van de mobiel moet minder realistisch (wat Cyd ook zei). 
+
 **Donderdag** 
 **Vrijdag** 
 
