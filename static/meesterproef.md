@@ -52,7 +52,7 @@ Verder vrijdag bezig geweest met het omschrijven naar object oriënted en maanda
 
 Hebben het werkend gekregen behalve de tools en dat de bolletjes groeien
 
-### Week 3
+### 🔧 Week 3
 
 **Maandag** ben ik bezig geweest met het omschrijven van de code naar object oriented, (classes and constructors). We hebben de tools werkend gekregen, de nodes groeien weer, hebben de forward buttons laten spawnen als je mensen linked en hebben wat code duplications eruit gehaald. 
 
@@ -69,9 +69,28 @@ Verder hadden we wat voorstellen gedaan aan Yuri. Deze gingen over de mobiel als
 
 Ook had Yuri nog wat dingen aan te merken op de styling. De mobiel moest kleiner, de toolbar naar onderen want die staat bovenaan en daardoor lijkt hij het belangrijkst, en het plaatje van de mobiel moet minder realistisch (wat Cyd ook zei). 
 
-**Donderdag** 
-**Vrijdag** 
+Die woensdag hebben we dus meteen het design aangepast in figma, en meerdere versies gemaakt over wat mogelijk zou zijn. Uiteindelijk hebben we dingen bij elkaar gevoegd en hier kwam een mooi design uit.  
+
+**Donderdag**  ben ik bezig geweest om de layout van de website te veranderen aan de hand van het figma design. Ik wilde dit heel graag doen want ik was helemaal klaar met de onzekerheid van de code van Rick, en kwam daar dus niet echt verder mee. 
+
+De layout was snel gefixed. En verder was ik bezig meet meer optimalisatie van de code. 
+
+**Vrijdag** ben ik bezig geweest om de laatste dingentjes in het design te optimaliseren. Zo was het idee om het logo te laten verdwijnen als je erover heen hoverde, zodat je bij de nodes kan die erachter spawnen en zo het canvas zo groot mogelijk kan blijven. Toen ik dit aan het maken was lukte het niet helemaal zoals in mn gedachte, de header was aan het glitchen en dit kwam doordat de cursor aan het varanderen was naar de select cursor. Ik had een aantal dingen geprobeerd zoals display none, user-select op none, maar dat werkte allemaal niet. Uiteindelijk vond ik deze regel code dat het glitch effect oploste: `filter:alpha(opacity=0);`. Deze regel code had ik nog nooit gezien maar het werkte wel. 
+
+Ook ben ik bezig geweest om de data in de telefoon in te laden aan de hand van welke node je hebt geselecteerd. 
+
+### 🎬 Week 4
+
+### 🔬 Week 5
+
+### ⏱️ Week 6
+
+**Donderdag** presentation at client (June 20)
+**Vrijdag** expo at CMD (June 21) 
+
+### Week 7
+
+**Dinsdag** final assessment (ca. June 25) (Groepsgesprek en cijfer)
 
 
-
-<!-- Emoji's to use: 📖🛫👏🔄 | 🤩 -->
+<!-- Emoji's to use: 📖🛫👏🔄🔧 🎬(simulation) ⏱️ 🤳 🧪 🔬| 🤩 -->
