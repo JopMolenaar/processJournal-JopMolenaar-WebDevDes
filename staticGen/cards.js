@@ -91,7 +91,7 @@ function mouseMoveFunction(e) {
             transform: `translate(${panX}px, ${panY}px)`,
         },
         {
-            duration: 2500,
+            duration: 2300,
             fill: "forwards",
             easing: "ease",
         }
