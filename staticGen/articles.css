@@ -39,6 +39,10 @@
     grid-template-rows: 2em 1fr;
 }
 
+html:has(.articles > ul > li:target) body main{
+    overflow: hidden;
+}
+
 .articles h2 {
     display: none;
 }

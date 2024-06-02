@@ -73,7 +73,7 @@ const positionValues = [
     },
 ];
 
-window.onmousemove = (e) => {
+function mouseMoveFunction(e) {
     const mouseX = e.clientX,
         mouseY = e.clientY;
 
@@ -86,7 +86,6 @@ window.onmousemove = (e) => {
     const panX = maxX * xDecimal * -1,
         panY = maxY * yDecimal * -1;
 
-
     ul.animate(
         {
             transform: `translate(${panX}px, ${panY}px)`,
@@ -97,7 +96,17 @@ window.onmousemove = (e) => {
             easing: "ease",
         }
     );
-};
+}
+window.addEventListener("mouseover", mouseMoveFunction);
+
+// Listen for hash changes
+window.addEventListener("hashchange", () => {
+    if (window.location.hash) {
+        window.removeEventListener("mouseover", mouseMoveFunction);
+    } else {
+        window.addEventListener("mouseover", mouseMoveFunction);
+    }
+});
 
 lis.forEach((li) => {
     let randomIndex;
