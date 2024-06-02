@@ -1,10 +1,10 @@
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-li {
+main > ul > li {
     background-color: transparent;
     perspective: 1000px; /* for the 3d effect */
 }
 
-li > a {
+main > ul > li > a {
     position: relative;
     width: 100%;
     height: 100%;
@@ -13,7 +13,7 @@ li > a {
     transform-style: preserve-3d;
     border-radius: 10px;
 }
-li:hover > a{
+main > ul > li:hover > a{
     transform: rotateY(180deg);
 }
 

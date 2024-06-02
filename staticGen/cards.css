@@ -108,8 +108,11 @@ html:has(li:hover) {
 
 main {
     height: 100%;
+    /* overflow-x: hidden;  */
+    position: relative;
+    /* TODO extra div around the ul to be able to scroll to the right and left of the ul */
 }
-ul {
+main > ul:nth-of-type(1) {
     align-self: center;
     position: relative;
     aspect-ratio: 1;
@@ -117,7 +120,7 @@ ul {
     height: 140vh;
 }
 
-li {
+main > ul:nth-of-type(1) > li {
     /* border: 1px solid red; */
     position: absolute;
     list-style: none;
@@ -144,71 +147,71 @@ li {
     }
 }
 
-li:nth-of-type(1){
+main > ul:nth-of-type(1) > li:nth-of-type(1){
     top: 4vh;
     left: 10vw;
 }
-li:nth-of-type(2){
+main > ul:nth-of-type(1) > li:nth-of-type(2){
     top: 10vh;
     left: 35vw;
 }
-li:nth-of-type(3){
+main > ul:nth-of-type(1) > li:nth-of-type(3){
     top: 6vh;
     left: 70vw;
 }
-li:nth-of-type(4){
+main > ul:nth-of-type(1) > li:nth-of-type(4){
     top: 10vh;
     left: 105vw;
 }
-li:nth-of-type(5){
+main > ul:nth-of-type(1) > li:nth-of-type(5){
     top: 37vh;
     left: 5vw;
 }
-li:nth-of-type(6){
+main > ul:nth-of-type(1) > li:nth-of-type(6){
     top: 40vh;
     left: 36vw;
 }
-li:nth-of-type(7){
+main > ul:nth-of-type(1) > li:nth-of-type(7){
     top: 38vh;
     left: 89vw;
 }
-li:nth-of-type(8){
+main > ul:nth-of-type(1) > li:nth-of-type(8){
     top: 46vh;
     left: 115vw;
 }
-li:nth-of-type(9){
+main > ul:nth-of-type(1) > li:nth-of-type(9){
     top: 78vh;
     left: 7vw;
 }
-li:nth-of-type(10){
+main > ul:nth-of-type(1) > li:nth-of-type(10){
     top: 72vh;
     left: 39vw;
 }
-li:nth-of-type(11){
+main > ul:nth-of-type(1) > li:nth-of-type(11){
     top: 45vh;
     left: 62vw;
 }
-li:nth-of-type(12){
+main > ul:nth-of-type(1) > li:nth-of-type(12){
     top: 76vh;
     left: 81vw;
 }
-li:nth-of-type(13){
+main > ul:nth-of-type(1) > li:nth-of-type(13){
     top: 78vh;
     left: 115vw;
 }
-li:nth-of-type(14){
+main > ul:nth-of-type(1) > li:nth-of-type(14){
     top: 110vh;
     left: 4vw;
 }
-li:nth-of-type(15){
+main > ul:nth-of-type(1) > li:nth-of-type(15){
     top: 104vh;
     left: 35vw;
 }
-li:nth-of-type(16){
+main > ul:nth-of-type(1) > li:nth-of-type(16){
     top: 110vh;
     left: 70vw;
 }
-li:nth-of-type(17){
+main > ul:nth-of-type(1) > li:nth-of-type(17){
     top: 107vh;
     left: 105vw;
 }
